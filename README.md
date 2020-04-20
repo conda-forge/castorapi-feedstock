@@ -9,10 +9,7 @@ Feedstock license: BSD 3-Clause
 
 Summary: Python API wrapper for Castor EDC to fetch data from you clinical study.
 
-castorapi is a python API wrapper for the Castor EDC API to
-fetch data from your clinical study.
-The author is not affiliated with Castor EDC. Use at your own risk.
-
+castorapi is a python API wrapper for the Castor EDC API. The author is not affiliated with Castor EDC. Use at your own risk.
 
 Current build status
 ====================
