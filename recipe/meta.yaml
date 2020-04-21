@@ -1,5 +1,5 @@
 {% set name = "castorapi" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 2fd0b9217d3851d8fb087e9f56caf6ba00da99d3adc92539f653e7e4e9acdfc7
+  sha256: 8ccfb5122f8487fc3704098f16929b428e4146c4e492e2afa00b652860a1d1a3
 
 build:
   number: 0
