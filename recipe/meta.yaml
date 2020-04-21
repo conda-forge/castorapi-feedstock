@@ -2,17 +2,17 @@
 {% set version = "0.1.4" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 2fd0b9217d3851d8fb087e9f56caf6ba00da99d3adc92539f653e7e4e9acdfc7
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -42,7 +42,7 @@ about:
   doc_url: https://github.com/wouterpotters/castorapi#usage
   dev_url: https://github.com/wouterpotters/castorapi
   description: castorapi is a python API wrapper for the Castor EDC API. The author is not affiliated with Castor EDC. Use at your own risk.
-     
+
 extra:
   recipe-maintainers:
     - wouterpotters
