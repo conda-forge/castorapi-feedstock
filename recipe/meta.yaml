@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://github.com/wouterpotters/castorapi
-  summary: Python API wrapper for Castor EDC to fetch data from you clinical study.
+  summary: Python API wrapper for Castor EDC to fetch data from your clinical study.
   license: MIT
   license_family: MIT
   license_file: LICENSE
