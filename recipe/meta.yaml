@@ -1,5 +1,5 @@
 {% set name = "castorapi" %}
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 75bb8bc4d935a80e5f7f091b0dae7214acb606f5d802b090bc253034da261820
+  sha256: f9172707bd53bac3a84bf38f801541f7096fd5b1122883ab068c2093259cc04a
 
 build:
   number: 0
@@ -42,7 +42,7 @@ about:
   doc_url: https://github.com/wouterpotters/castorapi#usage
   dev_url: https://github.com/wouterpotters/castorapi
   description: castorapi is a python API wrapper for the Castor EDC API. The author is not affiliated with Castor EDC. Use at your own risk.
-     
+
 extra:
   recipe-maintainers:
     - wouterpotters
