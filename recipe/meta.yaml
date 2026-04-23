@@ -10,7 +10,7 @@ source:
   sha256: 75bb8bc4d935a80e5f7f091b0dae7214acb606f5d802b090bc253034da261820
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -20,16 +20,18 @@ requirements:
     - pandas
     - pip
     - progressbar2
-    - python
+    - python {{ python_min }}
     - requests
   run:
     - json5
     - pandas
     - progressbar2
-    - python
+    - python >={{ python_min }}
     - requests
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - castorapi
 
